@@ -1,0 +1,5 @@
+@model Doctor
+@{ ViewData["Title"] = "Add Doctor"; }
+<div class="form-card"><h2>Add Doctor</h2><form asp-action="Create" method="post"><partial name="_DoctorForm" model="Model"/><button class="btn btn-primary">Save</button> <a asp-action="Index" class="btn btn-secondary">Cancel</a></form></div>
+
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }
